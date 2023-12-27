@@ -1,0 +1,57 @@
+@use '../foundation' as *;
+
+.works-list__item {
+    @include mq(md){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.works-list__item:nth-of-type(even) {
+    @include mq(md){
+        flex-direction: row-reverse;
+    }
+}
+
+.works-list__item + .works-list__item {
+    margin-top: prem(30);
+}
+
+.works-list__item-img {
+    width: 100%;
+    @include mq(md){
+        max-width: prem(600);
+    }
+}
+
+.works-list__item:nth-of-type(even) .works-list__item-img {
+    @include mq(md){
+        margin-left: prem(100);
+    }
+}
+
+.works-list__item-img img {
+    width: 100%;
+    aspect-ratio: 550/420;
+    object-fit: cover;
+}
+
+.works-list__item-text {
+    margin-top: prem(20);
+    font-size: prem(16);
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    @include mq(md){
+        margin-top: 0;
+        margin-left: prem(100);
+        max-width: prem(550);
+        width: 100%;
+    }
+}
+
+.works-list__item:nth-of-type(even) .works-list__item-text {
+    @include mq(md){
+        margin-left: 0;
+    }
+}
