@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <title>コーディング効率化講座</title>
+  <meta name="description" content="トップページの説明" />
+  <meta name="keywords" content="キーワード" />
+  <!-- ogp -->
+  <meta property="og:title" content="サイト名" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="サイトのドメイン" />
+  <meta property="og:image" content="OGP IMAGE" />
+  <meta property="og:site_name" content="サイトのドメイン" />
+  <meta property="og:description" content="トップページの説明" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="">
+  <link rel="apple-touch-icon" href="">
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <main>
+    <!-- header1 -->
+    <header class="p-header l-header">
+      <div class="p-header__inner">
+        <h1 class="p-header__logo">
+          <a href="#">
+            <img src="./images/common/logo.svg" alt="LOGO">
+          </a>
+        </h1>
+        <nav class="p-header__nav">
+          <ul class="p-header__nav-items">
+            <li class="p-header__nav-item">
+              <a href="#">top</a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href="#">about</a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href="#">works</a>
+            </li>
+            <li class="p-header__nav-item p-header__nav-item--contact">
+              <a href="/contact.html" target="_blank" rel="noopener">contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="p-header__hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="p-header__drawer js-drawer">
+          <nav class="p-header__drawer-nav">
+            <ul class="p-header__drawer-items">
+              <li class="p-header__drawer-item">
+                <a href="#">top</a>
+              </li>
+              <li class="p-header__drawer-item">
+                <a href="#">about</a>
+              </li>
+              <li class="p-header__drawer-item">
+                <a href="#">works</a>
+              </li>
+              <li class="p-header__drawer-item p-header__drawer-item--contact">
+                <a href="#" target="_blank" rel="noopener">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="p-contact">
+      <div class="p-contact__inner">
+        <form class="p-contact__form p-form" action="">
+          <dl class="p-form__wrap">
+            <dt class="p-form__label">名前<span>必須</span></dt>
+            <dd class="p-form__input p-form-input">
+              <input type="text">
+            </dd>
+          </dl>
+          <dl class="p-form__wrap">
+            <dt class="p-form__label">電話番号<span>必須</span></dt>
+            <dd class="p-form__input p-form-input">
+              <input type="tel">
+            </dd>
+          </dl>
+          <dl class="p-form__wrap">
+            <dt class="p-form__label">メールアドレス<span>必須</span></dt>
+            <dd class="p-form__input p-form-input">
+              <input type="email">
+            </dd>
+          </dl>
+          <dl class="p-form__wrap">
+            <dt class="p-form__label">住所</dt>
+            <dd class="p-form__select p-form-select">
+              <select>
+                <option hidden>選択してください</option>
+                <option value="東京">東京</option>
+                <option value="大阪">大阪</option>
+                <option value="福岡">福岡</option>
+                <option value="その他">その他</option>
+              </select>
+            </dd>
+          </dl>
+          <dl class="p-form__wrap">
+            <dt class="p-form__label">カテゴリ</dt>
+            <dd class="p-form__radio p-form-radio">
+              <label><input type="radio" name="category" value="ホームページ制作"><span>ホームページ制作</span></label>
+              <label><input type="radio" name="category" value="SNS運用"><span>SNS運用</span></label>
+              <label><input type="radio" name="category" value="その他"><span>その他</span></label>
+            </dd>
+          </dl>
+          <dl class="p-form__wrap">
+            <dt class="p-form__label">お持ちのSNS</dt>
+            <dd class="p-form__checkbox p-form-checkbox">
+              <label><input type="checkbox" name="sns" value="Twitter"><span>Twitter</span></label>
+              <label><input type="checkbox" name="sns" value="Instagram"><span>Instagram</span></label>
+              <label><input type="checkbox" name="sns" value="Facebook"><span>Facebook</span></label>
+              <label><input type="checkbox" name="sns" value="YouTube"><span>YouTube</span></label>
+              <label><input type="checkbox" name="sns" value="その他"><span>その他</span></label>
+            </dd>
+          </dl>
+          <dl class="p-form__wrap p-form__wrap--textarea">
+            <dt class="p-form__label">お問い合わせ内容<span>必須</span></dt>
+            <dd class="p-form__textarea p-form-textarea">
+              <textarea name="message"></textarea>
+            </dd>
+          </dl>
+          <div class="p-form__submit p-form-submit">
+            <input type="submit" value="送信">
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </main>
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

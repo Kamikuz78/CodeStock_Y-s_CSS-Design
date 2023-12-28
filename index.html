@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no" />
-  <title>コーディング効率化講座</title>
+  <title>My Code Stock</title>
   <meta name="description" content="トップページの説明" />
   <meta name="keywords" content="キーワード" />
   <!-- ogp -->
@@ -15,14 +16,65 @@
   <meta property="og:site_name" content="サイトのドメイン" />
   <meta property="og:description" content="トップページの説明" />
   <!-- ファビコン -->
-  <link rel="”icon”" href="">
-  <link rel="apple-touch-icon" href="">
+  <!-- <link rel="”icon”" href=""> -->
+  <!-- <link rel="apple-touch-icon" href=""> -->
   <!-- CSS -->
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
   <main>
+    <!-- header1 -->
+    <header class="p-header l-header">
+      <div class="p-header__inner">
+        <h1 class="p-header__logo">
+          <a href="#">
+            <img src="./images/common/logo.svg" alt="LOGO">
+          </a>
+        </h1>
+        <nav class="p-header__nav">
+          <ul class="p-header__nav-items">
+            <li class="p-header__nav-item">
+              <a href="#">top</a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href="#">about</a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href="#">works</a>
+            </li>
+            <li class="p-header__nav-item p-header__nav-item--contact">
+              <a href="/contact.html" target="_blank" rel="noopener">contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="p-header__hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="p-header__drawer js-drawer">
+          <nav class="p-header__drawer-nav">
+            <ul class="p-header__drawer-items">
+              <li class="p-header__drawer-item">
+                <a href="#">top</a>
+              </li>
+              <li class="p-header__drawer-item">
+                <a href="#">about</a>
+              </li>
+              <li class="p-header__drawer-item">
+                <a href="#">works</a>
+              </li>
+              <li class="p-header__drawer-item p-header__drawer-item--contact">
+                <a href="#" target="_blank" rel="noopener">contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
+    <!-- 横並び1 -->
     <div class="works">
       <div class="works__inner">
         <ul class="works__list works-list">
@@ -30,13 +82,17 @@
             <div class="works-list__item-img">
               <img src="./images/common/works.jpg" alt="省略">
             </div>
-            <p class="works-list__item-text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+            <p class="works-list__item-text">
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            </p>
           </li>
           <li class="works-list__item">
             <div class="works-list__item-img">
               <img src="./images/common/works.jpg" alt="省略">
             </div>
-            <p class="works-list__item-text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
+            <p class="works-list__item-text">
+              ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+            </p>
           </li>
         </ul>
       </div>
@@ -47,4 +103,5 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,65 @@
+@use "../foundation" as *;
+
+.p-form__wrap {
+  @include mq(md) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.p-form__wrap.p-form__wrap--textarea {
+  @include mq(md) {
+    align-items: flex-start;
+  }
+}
+
+.p-form__wrap + .p-form__wrap {
+  margin-top: prem(30);
+}
+
+.p-form__label {
+  font-size: prem(15);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  @include mq(md) {
+    max-width: prem(200);
+    width: 100%;
+  }
+}
+
+.p-form__wrap.p-form__wrap--textarea .p-form__label {
+  @include mq(md) {
+    margin-top: prem(10);
+  }
+}
+
+.p-form__label span {
+  margin-left: prem(10);
+  padding: prem(5);
+  display: inline-block;
+  font-size: prem(12);
+  color: #fff;
+  background-color: #d00000;
+}
+
+.p-form__input,
+.p-form__select,
+.p-form__radio,
+.p-form__checkbox,
+.p-form__textarea {
+  margin-top: prem(10);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.p-form__input,
+.p-form__textarea {
+  flex-grow: 1;
+}
+
+.p-form__submit {
+  margin-top: prem(60);
+  text-align: center;
+}
