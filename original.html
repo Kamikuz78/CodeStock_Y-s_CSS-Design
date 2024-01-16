@@ -35,10 +35,10 @@
         <nav class="p-header__nav">
           <ul class="p-header__nav-items">
             <li class="p-header__nav-item">
-              <a href="#">top</a>
+              <a href="/index.html">top</a>
             </li>
             <li class="p-header__nav-item">
-              <a href="#">about</a>
+              <a href="/gym.html">gym</a>
             </li>
             <li class="p-header__nav-item">
               <a href="#">works</a>
@@ -75,6 +75,8 @@
     </header>
 
     <!-- 横並びで片方だけ画面幅に連動 -->
+    <div class="orginal">
+    </div>
     <section>
       <div class="column">
         <p><img src="https://unsplash.it/1600/900" alt=""></p>
@@ -136,7 +138,55 @@
         <p><img src="https://unsplash.it/1600/900" alt=""></p>
       </div>
     </section>
+    section{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    padding: 40px;
+    margin: auto;
+    }
 
+    p{
+    font-size: 18px;
+    line-height: 1.8;
+    }
+
+    img{
+    width: 100%;
+    height: auto;
+    }
+
+    .reverse{
+    flex-direction: row-reverse;
+    }
+
+    .column{
+    width: 48%;
+    }
+
+    /*右側へ要素を広げる（2カラム）*/
+    .column-outside-right{
+    flex: 1;
+    margin-right: calc(50% - 50vw);
+    margin-left: 4%;
+    }
+
+    /*左側へ要素を広げる（2カラム）*/
+    .column-outside-left{
+    flex: 1;
+    margin-left: calc(50% - 50vw);
+    margin-right: 4%;
+    }
+
+    /*右側へ要素を広げる（1カラム）*/
+    .outside-right{
+    margin-right: calc(50% - 50vw);
+    }
+
+    /*左側へ要素を広げる（1カラム）*/
+    .outside-left{
+    margin-left: calc(50% - 50vw);
+    }
   </main>
   <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

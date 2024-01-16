@@ -1,0 +1,68 @@
+@use "../foundation" as *;
+
+.p-gym-fv {
+    position: relative;
+    padding: 220px 0 95px;
+    @include media(sm) {
+        padding: 100px 0;
+    }
+
+
+    &__btn {
+    }
+}
+
+.p-gym-fv__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: max(calc(100% - ((100% - 1110px) / 2) - 228px), 228px);
+    height: 100%;
+    border-radius: 0 0 0 90px;
+    overflow: hidden;
+    @include media(sm) {
+        width: calc(100% - 40px);
+        border-radius: 0 0 0 45px;
+    }
+}
+
+.c-gym__inner {
+    position: relative;
+    z-index: 1;
+}
+
+.p-gym-fv__title {
+    margin-bottom: 20px;
+    @include media(sm) {
+        margin-bottom: 10px;
+    }
+}
+.p-gym-fv__title-text {
+    font-size: 90px;
+    font-style: italic;
+    background-color: #fff;
+    @include media(sm) {
+        font-size: 50px;
+    }
+    .pink {
+        color: $pink;
+        font-size: 85px;
+        font-weight: 600;
+        @include media(sm) {
+            font-size: 40px;
+        }
+    }
+}
+
+.p-gym-fv__text {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    @include media(sm) {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    span {
+        background-color: #fff;
+    }
+}

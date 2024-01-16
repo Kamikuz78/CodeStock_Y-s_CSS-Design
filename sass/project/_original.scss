@@ -1,0 +1,55 @@
+@use "../foundation" as *;
+
+.original {
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    padding: 40px;
+    margin: auto;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    width: 48%;
+}
+
+/*右側へ要素を広げる（2カラム）*/
+.column-outside-right {
+    flex: 1;
+    margin-right: calc(50% - 50vw);
+    margin-left: 4%;
+}
+
+/*左側へ要素を広げる（2カラム）*/
+.column-outside-left {
+    flex: 1;
+    margin-left: calc(50% - 50vw);
+    margin-right: 4%;
+}
+
+/*右側へ要素を広げる（1カラム）*/
+.outside-right {
+    margin-right: calc(50% - 50vw);
+}
+
+/*左側へ要素を広げる（1カラム）*/
+.outside-left {
+    margin-left: calc(50% - 50vw);
+}
